@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Changer la taille du texte</title>
+</head>
+<body>
+
+<span style="font-size: 8px;" id="texte" onclick="changerTaille();">Je suis un texte.</span>
+<script type="text/javascript">
+	var num=0;
+	var texte = document.getElementById("texte");
+	function changerTaille(){
+		if(num==0){
+			texte.style.fontSize = "32px";
+			num=1;
+		}else{
+			texte.style.fontSize = "8px";
+			num=0;
+		}
+		
+	}
+
+
+</script>
+
+
+
+</body>
+</html>
